@@ -1,6 +1,13 @@
+#TODO: "you typically wouldn't store [files generated from protobuf] in a 
+# version controlk system"
+
 # Visual Studio
 .idea/
 .vscode/
 
 # Don't track the virtual environment
 grpc-env/
+
+# pycache files
+*/__pycache__/
+*.pyc
