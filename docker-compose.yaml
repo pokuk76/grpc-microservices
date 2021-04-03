@@ -11,4 +11,15 @@ services:
         networks:
             - microservices
         ports:
-            -5000:5000
+            - 5000:5000
+
+    recommendations:
+        build:
+            context: .
+            dockerfile: recommendations/Dockerfile
+        image: recommendations
+        networks:
+            -  microservices
+
+networks:
+    microservices:
