@@ -1,2 +1,6 @@
+# Visual Studio
+.idea/
+.vscode/
+
 # Don't track the virtual environment
 grpc-env/
