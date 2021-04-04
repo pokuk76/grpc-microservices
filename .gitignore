@@ -11,3 +11,8 @@ grpc-env/
 # pycache files
 */__pycache__/
 *.pyc
+
+# kubectl and minikube
+kubectl
+kubectl.sha256
+minikube-linux-amd64
