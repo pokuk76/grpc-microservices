@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: marketplace
+  labels:
+    app: marketplace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: marketplace
+  template:
+    metadata:
+      labels:
+        app: marketplace
+    spec:
+      containers:
+        - name: marketplace
+          image: pokuk76/grpc-microservices-marketplace:latest
+          env:
+            - name: RECOMMENDATIONS_HOST
+              value: recommendations
